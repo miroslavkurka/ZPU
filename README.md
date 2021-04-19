@@ -34,6 +34,21 @@ chmod +x sa_ts
 
 ```
 
+## Simpson's rule (TODO)
+
+Implementation of Simpson's rule in C. 
+
+
+```BASH
+# compile it 
+clang -o simp simpson.c
+
+# change exceptionable permissions 
+chmod +x simp
+
+# run the program
+./simp
+
 
 
 
