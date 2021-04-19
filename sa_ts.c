@@ -23,7 +23,7 @@ void rand_gen(double x[], double y[]) {
 void euclidian_length(double field[COUNT][COUNT]){
     for (int j=0; j<COUNT;++j)
         for  (int k=0; k<COUNT; ++k)
-            field[j][k]= sqrt(pow(x[j]-x[k],2)+pow(y[j]+y[k],2));
+            field[j][k]= sqrt(pow(x[j]-x[k],2)+pow(y[j]-y[k],2));
 	
 }
 
@@ -66,7 +66,7 @@ double anneal(int cycles){
             double possible_distance=print_dist(0);
             delta_e= possible_distance - real_distance;
           
-            if (rand()/RAND_MAX > exp(-delta_e/temp)){
+            if ((double)rand()/RAND_MAX > exp(-delta_e/temp)){
                 change_places(random_place2,random_place1);
             }
             else{
@@ -80,7 +80,8 @@ double anneal(int cycles){
 int main(){
 
     printf("Cycles of annealing: ");
-    int c=getchar();
+    int c;
+    scanf("%d",&c);
     rand_gen(x,y);
     euclidian_length(distance);
     //print_dist();
