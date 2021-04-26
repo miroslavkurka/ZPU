@@ -6,7 +6,7 @@ double f(double x) {
   return tmp;
 }
 
-double Integral(double a, double b) // od a po b
+double Integral(int a, int b) // od a po b
 {
   /* Simpson
    * 1. dostan cele cislo na interval aproximacie
