@@ -22,8 +22,6 @@ clang-format -i my_c_file.c
 
 # The -i flag is to make the changes inplace, otherwise clang-format outputs to stdout
 # Check man pages at LLVM for code style flags etc.
-
-
 ```
 
 
@@ -42,7 +40,6 @@ chmod +x ts_euclidian
 
 # run the program
 ./ts_euclidian
-
 ```
 
 ## TSP solved by Simmulated Annealing 
@@ -55,7 +52,6 @@ chmod +x sa_ts
 
 # run the program
 ./sa_ts
-
 ```
 
 ## Simpson's rule (TODO)
@@ -72,7 +68,4 @@ chmod +x simp
 
 # run the program
 ./simp
-
-
-
-
+```
